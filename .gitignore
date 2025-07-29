@@ -4,6 +4,9 @@ venv/
 env/
 .env/
 
+# Environment archives
+.env 
+
 # Python cache
 __pycache__/
 *.pyc
