@@ -150,4 +150,4 @@ python list_agents.py
 
 ## License
 
-Yggor Ramos Arruda Herculano
+Yggor Ramos A. Herculano
