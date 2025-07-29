@@ -1,0 +1,11 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+SQLAlchemy==2.0.41
+python-dotenv==1.1.1
+google-api-python-client==2.177.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.2
+openai==1.97.1
+cryptography==45.0.5
+email-validator==2.2.0
+pydantic==2.11.7
