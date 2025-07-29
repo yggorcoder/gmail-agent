@@ -150,4 +150,4 @@ python list_agents.py
 
 ## License
 
-MIT
+Yggor Ramos Arruda Herculano
