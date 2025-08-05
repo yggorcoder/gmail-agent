@@ -2,12 +2,13 @@
 from fastapi import FastAPI, Depends, Request, Query, HTTPException, status
 from fastapi.responses import JSONResponse, RedirectResponse
 from sqlalchemy.orm import Session
-from app.database import engine, Base, SessionLocal, GmailAgent
-from app.emailRouter import router as email_router
-from app.summaryRouter import router as summary_router
-from app.tasksRouter import router as tasks_router
-from app.schemas import AgentIn
-from app.encryption import get_cipher_suite
+from app.apis.database_connection import engine, Base, SessionLocal
+from app.models.gmail_agents import GmailAgent
+from app.routers.emailRouter import router as email_router
+from app.routers.summaryRouter import router as summary_router
+from app.routers.tasksRouter import router as tasks_router
+from app.models.schemas import AgentIn
+from app.services.encryption import get_cipher_suite
 from google_auth_oauthlib.flow import Flow
 from urllib.parse import urlencode
 import google.oauth2.credentials

@@ -1,8 +1,9 @@
 from fastapi import APIRouter, HTTPException, Query, Depends
 from pydantic import BaseModel
-from app.database import SessionLocal, GmailAgent
-from app.encryption import get_cipher_suite
-from app.gmail_service import fetch_recent_emails
+from app.apis.database_connection import SessionLocal
+from app.models.gmail_agents import GmailAgent
+from app.services.encryption import get_cipher_suite
+from app.services.gmail_service import fetch_recent_emails
 from sqlalchemy.orm import Session
 
 router = APIRouter()

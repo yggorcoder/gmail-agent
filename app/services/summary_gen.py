@@ -1,4 +1,4 @@
-from app.openai_service import generate_text
+from app.services.openai_service import generate_text
 
 def generate_email_summary(email_body: str, language: str = "pt") -> str:
     prompt = (

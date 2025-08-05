@@ -1,7 +1,8 @@
 
 from fastapi import APIRouter, Depends, HTTPException
-from app.tasks import process_emails_task
-from app.database import SessionLocal, GmailAgent
+from app.tasks.tasks import process_emails_task
+from app.apis.database_connection import SessionLocal
+from app.models.gmail_agents import GmailAgent
 from sqlalchemy.orm import Session
 
 router = APIRouter()

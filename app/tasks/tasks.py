@@ -1,8 +1,10 @@
-from app.database import SessionLocal, GmailAgent
-from app.encryption import get_cipher_suite
-from app.gmail_service import fetch_recent_emails, get_gmail_service, mark_email_as_read, fetch_thread_history, send_email
-from app.summary_gen import generate_email_summary
-from app.response_gen import generate_email_response
+from app.apis.database_connection import SessionLocal
+from app.models.gmail_agents import GmailAgent
+from app.services.encryption import get_cipher_suite
+from app.services.gmail_service import fetch_recent_emails, get_gmail_service, mark_email_as_read, send_email
+from app.apis.gmail_api import fetch_thread_history
+from app.services.summary_gen import generate_email_summary
+from app.services.response_gen import generate_email_response
 
 def build_conversation_context(history, max_messages=6):
     """

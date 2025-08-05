@@ -1,4 +1,4 @@
-from app.openai_service import generate_text
+from app.services.openai_service import generate_text
 
 def generate_email_response(email_body: str, context: str = "", language: str = "pt") -> str:
     """

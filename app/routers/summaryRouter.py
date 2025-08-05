@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, validator
-from app.summary_gen import generate_email_summary
+from app.services.summary_gen import generate_email_summary
 import requests
 
 router = APIRouter()
